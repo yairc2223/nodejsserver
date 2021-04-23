@@ -136,3 +136,9 @@ app.post('/', (req,res)=>{
         consloe.log(err);
     })
 });
+
+// to fix
+app.post('/post-test',(req,res)=>{
+	console.log('Got body:',req.body);
+	res.sendStatus(200);
+});
