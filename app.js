@@ -23,7 +23,8 @@ mongoose.connect(dbURI , { useNewUrlParser: true , useUnifiedTopology:true})
 // register view engine
 app.set('view engine', 'ejs');
 app.use(morgan('tiny'));
-
+var cors = require('cors')
+app.use(cors())
 
 /// ----------------start options ---------------
 
